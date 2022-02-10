@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transfer_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( TransferDate__c &lt; TODAY(),   TransferDate__c - TODAY() &gt;15  )</errorConditionFormula>
+    <errorMessage>The Transfer date is out of valid region!</errorMessage>
+</ValidationRule>
