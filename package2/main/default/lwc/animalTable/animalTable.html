@@ -1,0 +1,20 @@
+<template>
+    <lightning-card> <br/>
+
+        
+
+       <div style="width: auto;">
+           <template if:true={data}>
+                  
+                       <p>Available Animals</p>
+                       <c-salesforce-codex-data-table
+                       key-field="id"
+                       data={data}
+             
+                       columns={columns}>
+        </c-salesforce-codex-data-table>
+           </template>
+
+       </div>
+   </lightning-card>   
+</template>
